@@ -42,13 +42,40 @@ block content
       
   .col-lg-4.col-md-4
 
-    h4 Welcome
-    p.text-muted <a href="/register">Register on NeutralZone</a> or post anonymously. <br>Read the <a href="#">sites guidelines here</a>.
+      h2 Register
+      form(role="form", action="/register", method="post", onsubmit="return verify()")
+        input(type="hidden", name="_csrf", value=csrfToken)
+        .form-group
+          label.control-label(for="username") Username
+          input#register-username.form-control(type="text", name="name", onkeyup="checkUsername()", maxlength="20")
+          p#validate_username.text-danger.pull-right
+        .form-group
+          label.control-label(for="password") Password
+          input#register-password.form-control(type="password", name="password", onkeyup="checkPasswords()")
+          p#validate_password.text-danger.pull-right
+        .form-group
+          label.control-label(for="password_confirm") Confirm Password
+          input#register-password-confirm.form-control(type="password", onkeyup="checkPasswords()")
+          p#validate_confirm.text-danger.pull-right
+        .form-group
+          label.control-label(for="email") Email (optional)
+          input#register-email.form-control(type="email", name="email")
+          p#validate_email.text-danger.pull-right
+          p
+            | Providing an email address is optional and will allow you to recover your account via email if you forget your password.
+            strong &nbsp;&nbsp;If you do not provide an email address, you will not be able to recover a lost account!
+        if hCaptchaSiteKey
+          noscript
+            .text-danger This website requires JavaScript in order to display a CAPTCHA.
+          .form-group
+            div.h-captcha(data-sitekey=hCaptchaSiteKey)
+        button#registerbtn.btn.btn-success.btn-block(type="submit") Register
+  else
+    .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3
+      .alert.alert-success.messagebox.center
+        strong Registration Successful
+        p Thanks for registering, #{registerName}!  Now you can <a href="/login">Login</a> to use your account.
 
-    h4 Donate
-    p.text-muted <a href="#">Contribute to hosting and domain costs</a>, it is very much appreciated.
-    p.text-muted Create content and get published by NeutralZone, <a href="#">follow this guide</a>.
-  
 append footer
   script(type="text/javascript").
     $("#channelname").keydown(function (ev) {
