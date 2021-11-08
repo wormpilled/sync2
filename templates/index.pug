@@ -1,7 +1,11 @@
 extends layout.pug
 
 block content
-  .col-lg-8.col-md-8
+  .col-lg-9.col-md-9    
+  p.
+      You can find a guide with screenshots of the installation process
+      <a href="https://github.com/calzoneman/sync/wiki/Google-Drive-Userscript-Installation-Guide" target="_blank">on GitHub</a>.
+    
     h3 Active Channels
     table.table.table-bordered.table-striped
       thead
@@ -37,12 +41,22 @@ block content
             td /x/
             td Conspiracy and alien /x/ related content.
 
-            
-          
+    h3 Official Channels
+    h2 Contributiong
+    ul
+      li
+        strong Donating
+        | &mdash;Give us money so we can pay <a href="$" target="_blank">hosting costs</a>.
+      li
+        strong Writing
+        | &mdash; Let us <a href="#" target="_blank">publish your original content</a>, helping grow the site's influence.
+      li
+        strong Sharing
+        | &mdash;Share NeutralZone personally with your friends or post links on "social media".          
       
-  .col-lg-4.col-md-4
+  .col-lg-3.col-md-3
 
-      h2 Register
+      h3 Register
       form(role="form", action="/register", method="post", onsubmit="return verify()")
         input(type="hidden", name="_csrf", value=csrfToken)
         .form-group
@@ -61,9 +75,6 @@ block content
           label.control-label(for="email") Email (optional)
           input#register-email.form-control(type="email", name="email")
           p#validate_email.text-danger.pull-right
-          p
-            | Providing an email address is optional and will allow you to recover your account via email if you forget your password.
-            strong &nbsp;&nbsp;If you do not provide an email address, you will not be able to recover a lost account!
         if hCaptchaSiteKey
           noscript
             .text-danger This website requires JavaScript in order to display a CAPTCHA.
