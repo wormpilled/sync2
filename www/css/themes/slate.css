@@ -1,27 +1,6 @@
  :root {
-    --dark-bg: #0b0b0b;
-    --items-bg: #131313; 
-    --bot-chat-msg-bg: #222528;
-    --playlist-perm: #0e0e0e;
-    --playlist-temp: #131313;
-    --bg: #1b1b1b;
-    --bg-chat: #181819;
-    --btn-bg: #131313;
-    --btn-bg-hover: #0e0e0e;
-    --btn-text: #999;
-    --btn-text-hover: #e74c3c;
-    --btn-text-danger: darkred;
-    --banner-logo: #e74c3c;
-    --banner-flicker: #e74c3c;
-    --bot-video-title: #e74c3c;
-    --playlist-buttons: #777;
-    --playlist-current: #e74c3c;
-    --userlist-admins: #e74c3c;
-    --dropdown-link: #999;
-    --dropdown-link-hover: #e74c3c;
-    --bot-username: #037f51;
-    --border-master: #252525;
-    --border-highlight: #013421;
+    --dark-bg: #272b30;
+    --dark-bg: red;
 }
 
 
@@ -888,7 +867,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #c8c8c8;
-    background-color: #272b30;
+    background-color: var(--dark-bg);
 }
 button,
 input,
@@ -2154,7 +2133,7 @@ th {
     border-top: 2px solid #1c1e22;
 }
 .table .table {
-    background-color: #272b30;
+    background-color: var(--dark-bg);
 }
 .table-condensed > tbody > tr > td,
 .table-condensed > tbody > tr > th,
@@ -2403,7 +2382,7 @@ output {
     padding-top: 9px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #272b30;
+    color: var(--dark-bg);
 }
 .form-control {
     display: block;
@@ -2412,7 +2391,7 @@ output {
     padding: 8px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #272b30;
+    color: var(--dark-bg);
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
@@ -3229,7 +3208,7 @@ tbody.collapse.in {
     font-size: 14px;
     text-align: left;
     background-color: #3a3f44;
-    border: 1px solid #272b30;
+    border: 1px solid var(--dark-bg);
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -3245,7 +3224,7 @@ tbody.collapse.in {
     height: 1px;
     margin: 9px 0;
     overflow: hidden;
-    background-color: #272b30;
+    background-color: var(--dark-bg);
 }
 .dropdown-menu > li > a {
     display: block;
@@ -3260,7 +3239,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:hover {
     text-decoration: none;
     color: #fff;
-    background-color: #272b30;
+    background-color: var(--dark-bg);
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
@@ -3268,7 +3247,7 @@ tbody.collapse.in {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #272b30;
+    background-color: var(--dark-bg);
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:focus,
@@ -3768,7 +3747,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     .nav-tabs.nav-justified > .active > a,
     .nav-tabs.nav-justified > .active > a:focus,
     .nav-tabs.nav-justified > .active > a:hover {
-        border-bottom-color: #272b30;
+        border-bottom-color: var(--dark-bg);
     }
 }
 .nav-pills > li {
@@ -3836,7 +3815,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     .nav-tabs-justified > .active > a,
     .nav-tabs-justified > .active > a:focus,
     .nav-tabs-justified > .active > a:hover {
-        border-bottom-color: #272b30;
+        border-bottom-color: var(--dark-bg);
     }
 }
 .tab-content > .tab-pane {
@@ -6507,7 +6486,7 @@ h6 {
 }
 input,
 textarea {
-    color: #272b30;
+    color: var(--dark-bg);
 }
 .has-warning .control-label,
 .has-warning .form-control-feedback,
@@ -6519,7 +6498,7 @@ textarea {
     border-color: #f89406;
 }
 .has-warning .input-group-addon {
-    background-color: #272b30;
+    background-color: var(--dark-bg);
     border: none;
 }
 .has-error .control-label,
@@ -6532,7 +6511,7 @@ textarea {
     border-color: #ee5f5b;
 }
 .has-error .input-group-addon {
-    background-color: #272b30;
+    background-color: var(--dark-bg);
     border: none;
 }
 .has-success .control-label,
@@ -6545,7 +6524,7 @@ textarea {
     border-color: #62c462;
 }
 .has-success .input-group-addon {
-    background-color: #272b30;
+    background-color: var(--dark-bg);
     border: none;
 }
 legend {
@@ -6823,7 +6802,7 @@ textarea.form-control {
 
 .queue_entry {
     border-color: #aaaaaa;
-    background-color: #272b30;
+    background-color: var(--dark-bg);
 }
 
 .navbar-inverse .navbar-text-nofloat {
