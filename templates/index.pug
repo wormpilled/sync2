@@ -76,10 +76,75 @@ block content
         strong Registration Successful
         p Thanks for registering, #{registerName}!  Now you can <a href="/login">Login</a> to use your account.
 
+
 append footer
+  if hCaptchaSiteKey
+    script(src="https://hcaptcha.com/1/api.js" async defer)
   script(type="text/javascript").
-    $("#channelname").keydown(function (ev) {
-      if (ev.keyCode === 13) {
-        location.href = "/#{channelPath}/" + $("#channelname").val();
+    function verify() {
+      var valid = checkUsername();
+      valid = checkPasswords() && valid;
+      valid = checkEmail() && valid;
+      return valid;
+    }
+    function checkUsername() {
+      function stateError(text){
+        target.parent()
+          .addClass("has-error")
+          .removeClass("has-success");
+        $("#validate_username").text(text);
       }
-    });
+      var target = $("#register-username");
+      var name = target.val();
+      if (name === "") {
+        stateError('Username must not be empty')
+        return false;
+      } else if (!(/^[-\w\u00c0-\u00ff]{1,20}$/).test(name)) {
+        stateError("Username must consist of 1-20 characters" +
+                    " a-Z, A-Z, 0-9, -, or _.");
+        return false;
+      } else {
+        target.parent()
+          .removeClass("has-error")
+          .addClass("has-success");
+        $("#validate_username").text('');
+      }
+    }
+    function checkPasswords() {
+      function stateError(text, target, validator){
+        target.parent()
+          .addClass("has-error")
+          .removeClass("has-success");
+        $(`#${validator}`).text(text);
+      }
+      var target = $("#register-password");
+      var target2 = $("#register-password-confirm");
+      var pw = target.val();
+      var pwc = target2.val();
+
+      $("#validate_password").text('');
+      $("#validate_confirm").text('');
+      if (pw === "") {
+        stateError('Password must not be empty', target, 'validate_password')
+        return false;
+      } else {
+        target.parent()
+          .removeClass("has-error")
+          .addClass("has-success");
+        if (pw !== pwc) {
+          stateError('Passwords do not match', target2, 'validate_confirm')
+          return false;
+        } else {
+          target2.parent()
+            .removeClass("has-error")
+            .addClass("has-success");
+        }
+      }
+    }
+    function checkEmail() {
+      var email = $("#register-email").val();
+      if (email.trim() === "") {
+        return confirm("Are you sure you want to register without setting a recovery email address?  If you lose the password, or if your account is compromised, you WILL NOT be able to recover it.");
+      }
+      return true;
+    }
