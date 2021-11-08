@@ -2,6 +2,8 @@ extends layout.pug
 
 block content
   .col-lg-9.col-md-9
+	div.includedContent
+      hello hello hello
     h2 Synchronized Shitposting
     p.
       NeutralZone allows users to register channels where connected viewers 
@@ -85,7 +87,7 @@ block content
           .form-group
             div.h-captcha(data-sitekey=hCaptchaSiteKey)
         button#registerbtn.btn.btn-success.btn-block(type="submit") Register
- 
+
 
 append footer
   if hCaptchaSiteKey
