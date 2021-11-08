@@ -1,3 +1,3 @@
     $(function(){
-      $("#includedContent").load("b.html"); 
+      $(".includedContent").load("b.html"); 
     });
