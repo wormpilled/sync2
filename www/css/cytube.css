@@ -155,7 +155,6 @@
 }
 
 #plmeta {
-    border-radius: 4px;
     border-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -351,7 +350,6 @@ li.ui-sortable-helper, li.ui-sortable-placeholder + li.queue_entry {
     z-index: 9999;
     position: fixed;
     border: 1px solid #aaaaaa;
-    border-radius: 5px;
     padding: 5px;
     max-width: 200px;
     max-height: 300px;
@@ -362,7 +360,6 @@ li.ui-sortable-helper, li.ui-sortable-placeholder + li.queue_entry {
     z-index: 9999;
     position: absolute;
     border: 1px solid #aaaaaa;
-    border-radius: 5px;
     color: #000000;
     max-width: 200px;
     padding: 5px;
@@ -372,7 +369,6 @@ li.ui-sortable-helper, li.ui-sortable-placeholder + li.queue_entry {
     max-width: 80px;
     max-height: 80px;
     border: 1px solid #aaaaaa;
-    border-radius: 5px;
 }
 
 #togglemotd .glyphicon {

@@ -363,10 +363,7 @@ body.vjs-full-window {
   opacity: 1;
   border: 0.06666em solid #fff;
   background-color: #2B333F;
-  background-color: rgba(43, 51, 63, 0.7);
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  border-radius: 0.3em;
+  background-color: rgba(43, 51, 63, 0.7); 
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -720,9 +717,7 @@ body.vjs-full-window {
   padding: 6px 8px 8px 8px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  border-radius: 0.3em; }
+  }
 
 .video-js .vjs-time-tooltip,
 .video-js .vjs-play-progress:before,
