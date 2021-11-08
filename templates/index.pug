@@ -2,7 +2,7 @@ extends layout.pug
 
 block content
   .col-lg-9.col-md-9
-    h3 Public Channels
+    h3 Active Channels
     table.table.table-bordered.table-striped
       thead
         th Channel
@@ -14,11 +14,34 @@ block content
             td: a(href=`/${channelPath}/${chan.name}`) #{chan.pagetitle} (#{chan.name})
             td= chan.usercount
             td= chan.mediatitle
-  .col-lg-3.col-md-3
-    h3 Enter Channel
-    input#channelname.form-control(type="text", placeholder="Channel Name")
-    p.text-muted New channels can be registered from the <a href="/account/channels">My Channels</a> pageSS.
 
+  .col-lg-9.col-md-9
+    h3 Active Channels
+    table.table.table-bordered.table-striped
+      thead
+        th Channel
+        th # Connected
+        th Now Playing
+      tbody 
+          tr
+            td reddit
+            td is
+            td gay
+  
+            
+          
+      
+  .col-lg-3.col-md-3
+
+    h3 Regsistering
+    p.text-muted You can <a href="/register">register an account</a> or post anonymous depending on each individual rooms settings. Read the <a href="#">sites guidelines here</a>.
+
+    h3 Donating
+    p.text-muted <a href="#">Help us with our hosting and domain costs</a>, it is very much appreciated.
+
+    h3 Writing
+    p.text-muted If you'd like to write content that we will post on our website, <a href="#">use this guide</a>.
+  
 append footer
   script(type="text/javascript").
     $("#channelname").keydown(function (ev) {
