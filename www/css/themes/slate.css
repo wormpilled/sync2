@@ -6233,15 +6233,14 @@ button.close {
 }
 .navbar {
     background-repeat: no-repeat;
-    -webkit-filter: none;
-    filter: none;
-    border: 1px solid var(--border-dark);
+    
+ 
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .navbar-inverse {
     background-repeat: no-repeat;
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .navbar-inverse .badge {
     background-color: #5d6368;
@@ -6269,54 +6268,54 @@ button.close {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .btn-default {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-default:hover {
 
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-primary {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-primary:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-success {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-success:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-info {
 
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-info:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-warning {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-warning:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-danger {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-danger:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .btn-link,
 .btn-link:hover {
@@ -6416,8 +6415,8 @@ legend {
 .input-group-addon {
     border-color: var(--border-dark);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    -webkit-filter: none;
-    filter: none;
+    
+
     color: #fff;
 }
 .nav .open > a,
@@ -6426,67 +6425,67 @@ legend {
     border-color: var(--border-dark);
 }
 .nav-pills > li > a {
-    -webkit-filter: none;
-    filter: none;
+    
+
     border: 1px solid var(--border-dark);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .nav-pills > li > a:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
     border: 1px solid var(--border-dark);
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover {
     background-color: none;
-    -webkit-filter: none;
-    filter: none;
+    
+
     border: 1px solid var(--border-dark);
 }
 .nav-pills > li.disabled > a,
 .nav-pills > li.disabled > a:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .pagination > li > a,
 .pagination > li > span {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .pagination > li.active > a,
 .pagination > li.active > span,
 .pagination > li > a:hover,
 .pagination > li > span:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .pagination > li.disabled > a,
 .pagination > li.disabled > a:hover,
 .pagination > li.disabled > span,
 .pagination > li.disabled > span:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .pager > li > a {
-    -webkit-filter: none;
-    filter: none;
+    
+
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .pager > li > a:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .pager > li.disabled > a,
 .pager > li.disabled > a:hover {
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .breadcrumb {
     border: 1px solid var(--border-dark);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    -webkit-filter: none;
-    filter: none;
+    
+
 }
 .alert .alert-link,
 .alert a {
