@@ -2839,7 +2839,7 @@ function initPm(user) {
 
 function checkScriptAccess(viewSource, type, cb) {
     var pref = "ALLOW";
-    var v = CHANNEL;
+    var v = CHANNEL.name.toLowerCase();
 	console.log(v); 
 	console.log("HELLO"); 
     if (pref === "ALLOW") {
