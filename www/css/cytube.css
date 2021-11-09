@@ -2,10 +2,11 @@
     --background: #000;
     --table-even: green;
     --table-odd: blue;
-	--dark-text: lightgreen;
+	--text-dark: lightgreen;
+	--text-light: lightblue;
 	--border-dark: green;
 	--border-light: red;
-	--border-highlight: red;
+	--border-highlight: orange;
 }
 
 .container-fluid {
