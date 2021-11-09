@@ -816,16 +816,17 @@ function showPollMenu() {
         .attr("type", "text")
         .appendTo(menu);
 
-    $("<strong/>").text("Timeout (optional)").appendTo(menu);
+    $("<strong/>").text("Timeout (optional)").addClass("hide-me").appendTo(menu);
     $("<p/>").text("If you specify a timeout, the poll will automatically " +
                    "be closed after that amount of time.  You can either " +
                    "specify the number of seconds or use the format " +
                    "minutes:seconds.  Examples: 90 (90 seconds), 5:30 " +
                    "(5 minutes, 30 seconds)")
-        .addClass("text-muted")
+        .addClass("hide-me")
         .appendTo(menu);
     var timeout = $("<input/>").addClass("form-control")
         .attr("type", "text")
+        .addClass("hide-me")
         .appendTo(menu);
     var timeoutError = null;
 
