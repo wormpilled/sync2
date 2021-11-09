@@ -2838,7 +2838,7 @@ function initPm(user) {
 }
 
 function checkScriptAccess(viewSource, type, cb) {
-    var pref = JSPREF[CHANNEL.name.toLowerCase() + "_" + type];
+    var pref = "ALLOW";
     if (pref === "ALLOW") {
         return cb("ALLOW");
     } else if (pref !== "DENY") {

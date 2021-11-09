@@ -902,7 +902,7 @@ $("#fullscreenbtn").click(function () {
 });
 
 function handleCSSJSTooLarge(selector) {
-    if (this.value.length > 2000000) {
+    if (this.value.length > 20000) {
         var warning = $(selector);
         if (warning.length > 0) {
             return;
