@@ -1,3 +1,12 @@
+ :root {
+    --background: #000;
+    --table-even: green;
+    --table-odd: blue;
+	--dark-text: lightgreen;
+	--border-dark: green;
+	--border-light: red;
+	--border-highlight: red;
+}
 
 .container-fluid {
     padding-left: 15px;
