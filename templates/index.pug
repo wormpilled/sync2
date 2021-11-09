@@ -62,7 +62,10 @@ block content
         | &mdash; Your ADHD brain can forget stuff. So Bookmark us today!
       
   .col-lg-3.col-md-3
-
+  
+  if loggedIn
+      h3 Thanks for registering
+  else
       h3 Register
       form(role="form", action="/register", method="post", onsubmit="return verify()")
         input(type="hidden", name="_csrf", value=csrfToken)

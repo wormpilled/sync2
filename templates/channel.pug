@@ -15,7 +15,7 @@ html(lang="en")
           ul.nav.navbar-nav
             +navdefaultlinks()
             li: a(href="javascript:void(0)", onclick="javascript:showUserOptions()") Options
-            li: a#showchansettings(href="javascript:void(0)", onclick="javascript:showChannelSettings()") Channel Settings
+            li: a#showchansettings(href="javascript:void(0)", onclick="javascript:showChannelSettings()") MOD
             li.dropdown
               a.dropdown-toggle(href="#", data-toggle="dropdown") Layout
                 b.caret
@@ -163,7 +163,7 @@ html(lang="en")
         .modal-content
           .modal-header
             button.close(data-dismiss="modal", aria-hidden="true") &times;
-            h4 User Preferences
+            h4 User Options
             ul.nav.nav-tabs
               li: a(href="#us-general", data-toggle="tab") General
               li: a(href="#us-playback", data-toggle="tab") Playback
