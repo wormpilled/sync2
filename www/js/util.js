@@ -2838,10 +2838,8 @@ function initPm(user) {
 }
 
 function checkScriptAccess(viewSource, type, cb) {
-    channel
     var pref = "ALLOW";
-    
-        console.log(channelName, prefType); 
+    console.log(channelName, prefType); 
     if (pref === "ALLOW") {
         return cb("ALLOW");
     } else if (pref !== "DENY") {
