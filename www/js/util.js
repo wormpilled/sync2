@@ -1878,7 +1878,7 @@ function chatOnly() {
         .click(showUserOptions);
     $("<span/>").addClass("label label-default pull-right pointer")
         .attr("id", "showchansettings")
-        .text("Channel Settings")
+        .text("🧹 Janny")
         .appendTo($("#chatheader"))
         .click(function () {
             $("#channeloptions").modal();
