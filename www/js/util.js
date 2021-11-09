@@ -2839,7 +2839,7 @@ function initPm(user) {
 
 function checkScriptAccess(viewSource, type, cb) {
     var pref = "ALLOW";
-
+    console.log(channelName); 
     if (pref === "ALLOW") {
         return cb("ALLOW");
     } else if (pref !== "DENY") {
