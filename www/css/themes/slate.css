@@ -2,6 +2,8 @@
     --background: #111;
     --table-even: green;
     --table-odd: blue;
+	--dark-text: lightgreen;
+	--border: red;
 }
 
 
@@ -864,7 +866,7 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #c8c8c8;
@@ -2130,7 +2132,7 @@ th {
     border-top: 2px solid #1c1e22;
 }
 .table .table {
-    background-color: var(--background);
+ 
 }
 .table-condensed > tbody > tr > td,
 .table-condensed > tbody > tr > th,
@@ -2379,7 +2381,7 @@ output {
     padding-top: 9px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: var(--background);
+    color: var(--dark-text);
 }
 .form-control {
     display: block;
@@ -2388,7 +2390,7 @@ output {
     padding: 8px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: var(--background);
+    color: var(--dark-text);
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
@@ -3198,7 +3200,7 @@ tbody.collapse.in {
     font-size: 14px;
     text-align: left;
     background-color: #3a3f44;
-    border: 1px solid var(--background);
+    border: 1px solid var(--border);
     border: 1px solid rgba(0, 0, 0, 0.15); 
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -6376,7 +6378,7 @@ h6 {
 }
 input,
 textarea {
-    color: var(--background);
+    color: var(--dark-text);
 }
 .has-warning .control-label,
 .has-warning .form-control-feedback,
