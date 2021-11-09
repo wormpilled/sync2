@@ -2841,6 +2841,7 @@ function checkScriptAccess(viewSource, type, cb) {
     var pref = "ALLOW";
     var v = CHANNEL;
 	console.log(v); 
+	console.log("HELLO"); 
     if (pref === "ALLOW") {
         return cb("ALLOW");
     } else if (pref !== "DENY") {
