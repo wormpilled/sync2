@@ -15,7 +15,7 @@ html(lang="en")
           ul.nav.navbar-nav
             +navdefaultlinks()
             li: a(href="javascript:void(0)", onclick="javascript:showUserOptions()") Options
-            li: a#showchansettings(href="javascript:void(0)", onclick="javascript:showChannelSettings()") <b>MOD</b>
+            li: a#showchansettings(href="javascript:void(0)", onclick="javascript:showChannelSettings()") 🧹 Janny
             li.dropdown
               a.dropdown-toggle(href="#", data-toggle="dropdown") Layout
                 b.caret
@@ -169,7 +169,7 @@ html(lang="en")
               li: a(href="#us-playback", data-toggle="tab") Playback
               li: a(href="#us-chat", data-toggle="tab") Chat
               li: a(href="#us-scriptcontrol", data-toggle="tab") Script Access
-              li: a(href="#us-mod", data-toggle="tab", style="") Moderator
+              li: a(href="#us-mod", data-toggle="tab", style="") 🧹 Janny
           .modal-body
             .tab-content
               include useroptions
@@ -204,7 +204,7 @@ html(lang="en")
         .modal-content
           .modal-header
             button.close(data-dismiss="modal", aria-hidden="true") &times;
-            h4 MOD Settings
+            h4 🧹 Janny Settings
             ul.nav.nav-tabs
               li.active: a(href="#cs-miscoptions", data-toggle="tab") General Settings
               li: a(href="#cs-adminoptions", data-toggle="tab") Admin Settings
@@ -218,7 +218,7 @@ html(lang="en")
                   li: a(href="#cs-csseditor", data-toggle="tab", tabindex="-1") CSS
                   li: a(href="#cs-jseditor", data-toggle="tab", tabindex="-1") Javascript
                   li: a(href="#cs-permedit", data-toggle="tab", tabindex="-1") Permissions
-                  li: a(href="#cs-chanranks", data-toggle="tab", tabindex="-1", onclick="javascript:socket.emit('requestChannelRanks')") Moderators
+                  li: a(href="#cs-chanranks", data-toggle="tab", tabindex="-1", onclick="javascript:socket.emit('requestChannelRanks')") 🧹 Jannies
               li: a(href="#cs-banlist", data-toggle="tab", tabindex="-1", onclick="javascript:socket.emit('requestBanlist')") Ban list
               li: a(href="#cs-chanlog", data-toggle="tab", onclick="javascript:socket.emit('readChanLog')") Log
           .modal-body
