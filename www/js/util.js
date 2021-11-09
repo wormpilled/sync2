@@ -847,6 +847,7 @@ function showPollMenu() {
     addbtn.click(addOption);
     addOption();
     addOption();
+    addOption();
 
     $("<button/>").addClass("btn btn-default btn-block")
         .text("Open Poll")
