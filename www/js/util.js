@@ -2841,11 +2841,8 @@ function checkScriptAccess(viewSource, type, cb) {
 	
     var v = CHANNEL.name.toLowerCase();
 	if(v.indexOf("gigachud") !== -1){
-		console.log(v); 
-		console.log("js auto-downloaded for whitelisted room"); 
 		var pref = "ALLOW";
 	}
-	
     if (pref === "ALLOW") {
         return cb("ALLOW");
     } else if (pref !== "DENY") {
