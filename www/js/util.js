@@ -1013,7 +1013,6 @@ function handlePermissionChange() {
 
     setVisible("#showplaylistmanager", hasPermission("seeplaylist"));
     setVisible("#showmediaurl", hasPermission("playlistadd"));
-    setVisible("#showcustomembed", hasPermission("playlistaddcustom"));
     $("#queue_next").attr("disabled", !hasPermission("playlistnext"));
 
     if(hasPermission("playlistadd") ||
@@ -1055,7 +1054,6 @@ function handlePermissionChange() {
         $("#queue").removeClass("queue_sortable");
     }
 
-    setVisible("#clearplaylist", hasPermission("playlistclear"));
     setVisible("#shuffleplaylist", hasPermission("playlistshuffle"));
     if (!hasPermission("addnontemp")) {
         $(".add-temp").prop("checked", true);
@@ -2029,7 +2027,6 @@ function genPermissionsEditor() {
     makeOption("Jump to video", "playlistjump", standard, CHANNEL.perms.playlistjump+"");
     makeOption("Queue playlist", "playlistaddlist", standard, CHANNEL.perms.playlistaddlist+"");
     makeOption("Queue livestream", "playlistaddlive", standard, CHANNEL.perms.playlistaddlive+"");
-    makeOption("Embed custom media", "playlistaddcustom", standard, CHANNEL.perms.playlistaddcustom + "");
     makeOption("Add raw video file", "playlistaddrawfile", standard, CHANNEL.perms.playlistaddrawfile + "");
     makeOption("Exceed maximum media length", "exceedmaxlength", standard, CHANNEL.perms.exceedmaxlength+"");
     makeOption("Exceed maximum total media length", "exceedmaxdurationperuser", standard, CHANNEL.perms.exceedmaxdurationperuser+"");
@@ -2038,7 +2035,6 @@ function genPermissionsEditor() {
     makeOption("Temp/untemp playlist item", "settemp", standard, CHANNEL.perms.settemp+"");
     makeOption("Lock/unlock playlist", "playlistlock", modleader, CHANNEL.perms.playlistlock+"");
     makeOption("Shuffle playlist", "playlistshuffle", standard, CHANNEL.perms.playlistshuffle+"");
-    makeOption("Clear playlist", "playlistclear", standard, CHANNEL.perms.playlistclear+"");
     makeOption("Delete from channel library", "deletefromchannellib", standard, CHANNEL.perms.deletefromchannellib+"");
 
     addDivider("Polls");

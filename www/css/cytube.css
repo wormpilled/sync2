@@ -8,6 +8,8 @@
 	--border-dark: green;
 	--border-light: red;
 	--border-highlight: orange;
+	
+	--header-bg:#7a8288;
 }
 
 .container-fluid {
